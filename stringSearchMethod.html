@@ -15,8 +15,37 @@
         console.log(text2.lastIndexOf("love"));
 
         let str = "The rain in SPAIN stays mainly in the plain";
-        let result = str.search(/ain/i);
+        let result = str.search(/ain/g);
         console.log(result);
+
+        let text3 = "Hello JavaScript";
+        // let textResult = text3.match("Script");
+        console.log( text3.match("Script"));
+
+        let text4 = "The rain in the SPAIN stays mainly in the plain";
+        let textResult = text4.match(/ain/g);
+        console.log(textResult);
+
+        let text5 = "The rain in the SPAIN stays mainly in the plain";
+        let textResults = text5.match(/ain/gi);
+        console.log(textResults);
+
+        let text6 = "I love cats. Cats are very easy to love. Cats are vert popular.";
+        const iterator = text6.matchAll("Cats");
+        console.log(Array.from(iterator));
+
+        let text7 = "Hello world, welcome to the universe";
+        console.log(text7.includes("world"));
+        console.log(text7.includes('world',6));
+        console.log(text7.includes('world',9));
+
+        let text8 ="JavaScript is fun";
+        console.log(text8.startsWith("Ja"));
+        console.log(text8.startsWith("fu"));
+        console.log(text8.startsWith("fu",14));
+        //endsWith..
+        console.log(text8.endsWith("fun"));
+
     </script>    
 </body>
 </html>
