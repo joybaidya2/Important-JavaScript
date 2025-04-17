@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays!</title>
+</head>
+<body>
+    <script>
+        const array = ["JOY", "RICK", "Medha"];
+        console.log("The array is :"+array);
+        console.log(typeof array);
+        console.log(Array.isArray(array));
+        console.log(array instanceof Array);
+        console.log("Array length :"+array.length);
+
+        const cars = [
+            "R15",
+            "BMW",
+            "RTR"
+        ];
+        console.log("The all cars is :"+cars);
+        console.log("First number array is :"+cars[0]);
+        //Another way diclare array
+        //There is no need to use.
+        const newCars = new Array("Saab","Volvo","Pulser");
+        console.log("New cars is :"+newCars);
+
+        const persons = ["Rahul", "Poly", "Reva"];
+        persons[2]= "Babita";
+        console.log("The person is :"+persons);
+
+        //It's not work here.
+        const fruits = ['apple', 'oragne', 'banana'];
+        fruits[3]='mango';
+        console.log("The fruits are : "+fruits);
+
+        const adFruits = ['Banana','Orange', 'Apple'];
+        adFruits[6]='Lemon';
+        let fLen = adFruits.length;
+        let text = "";
+        for (i = 0; i<fLen; i++){
+            text = text + adFruits[i] +", ";
+        }
+        console.log(text);
+    </script>
+</body>
+</html>
