@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods!..</title>
+</head>
+<body>
+    <script>
+        //Array length
+        const fruits = ["Apple","Orange","Mango"];
+        console.log(fruits.length);
+        //Array toSting().
+        const person = ["Joy", "Rick", "Medha"];
+        console.log("The string are : "+person.toString());
+        //Array at().
+        const newFruits = ["Banana","Orange","Apple"];
+        console.log(newFruits.at(1));
+        console.log(newFruits.at(-3));
+        //Array join()..
+        const names = ["Rahul","Bishwajit","Roti"];
+        console.log(names.join(" * "));
+        //Array pop()
+        let value = [50, 30, 60, 70];
+        value.pop();
+        console.log(value);
+        //Array push()...
+        let girls = ["Medha","Poly","Babita"];
+        girls.push("Reva","Ritu");
+        console.log(girls);
+        //Array shift()..
+        let newGirls = ["Medha", "Poly","Bibata"];
+        newGirls.shift();
+        console.log(newGirls);
+        //Array unShift..
+        const persons = ["Arman","Animesh","Chayon"];
+        persons.unshift("Nazrul","Amit");
+        console.log(persons);
+        //Array delete
+        const anotherFruits = ["APPLE", "BANANA"];
+        delete anotherFruits[1];
+        console.log(anotherFruits);
+        //Array concat()..
+        let a = [1, 2];
+        let b = [3, 4];
+        let result = a.concat(b);
+        console.log(result);
+        //Array copyWithin()..
+        let nums = [1, 2, 3, 4, 5];
+        nums.copyWithin(0,2);
+        //nums.copyWithin(0,2); output :[3,4,5,4,5]
+        console.log(nums);
+        //Array flat()..
+        let arr = [1, 2, [3, 4, [5]]];
+        arr.flat();
+        console.log("The array out put is: "+arr);
+        //Array flatMap()
+        const myArr = [1, 2, 3, 4, 5, 6];
+        const newArr = myArr.flatMap(x => [x, x * 10]);
+        console.log(newArr);
+        //Array Splice 
+        let newFruit = ["Apple","Banana","Mango"];
+        newFruit.splice(1,1, "Orange");
+        //newFruit.splice(1,0, "Orange");
+        console.log(newFruit);
+        //Array toSpliced
+        let newName = ["Rasel","Rakesh","Sumon"];
+        let update = newName.toSpliced(1,0,"Ujall");
+        console.log(update);
+        console.log(newName);
+        //Array slice()
+        const updateFrutis = ["Apple","Banana","Mango"];
+        let part = updateFrutis.slice(1);
+        console.log(part);
+        
+
+    </script>
+</body>
+</html>
