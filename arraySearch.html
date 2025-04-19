@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Search Mehod..!</title>
+</head>
+<body>
+    <script>
+        //Array indexOf();
+        const fruits = ["Apple", "Banana", "Orange","Apple"];
+        console.log("Orange index number is :"+fruits.indexOf("Apple"));
+        //Array lastIndexOf()
+        const newFruits = ["Apple", "Mango","Orange","Apple"];
+        console.log(newFruits.lastIndexOf("Apple"));
+        //Array includes();
+        const names = ["Joy","Rahul","Rick"];
+        console.log(names.includes("Rahul"));
+        //Array find()
+        const numbers = [12, 3, 45, 18, 30];
+        const found = numbers.find(num => num > 15);
+        console.log(found);
+        //Another way find()
+        const nums = [23, 5, 67, 89, 34];
+        function myFunction(value){
+            return value > 25;
+        }
+        let number = nums.find(myFunction);
+        console.log(number);
+        //Array findIndex()
+        const newValue = [12, 34, 56, 6, 21];
+        function newFunction(value){
+            return value > 20;
+        }
+        let newNumbers = newValue.findIndex(newFunction);
+        console.log(newNumbers);
+        //Array findLast()
+        const anotherValue = [2, 13, 21, 12, 34, 56, 42];
+        function anotherFunction(value){
+            return value > 43;
+        }
+        let result = anotherValue.findLast(anotherFunction);
+        console.log(result);
+        let newResult = anotherValue.findLastIndex(anotherFunction);
+        console.log(newResult);
+    </script>
+</body>
+</html>
