@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sort Method....!</title>
+</head>
+<body>
+    <script>
+        //Alphabetice sort
+        //Array sort..
+        const furits = ["Banana", "Orange", "Apple"];
+        furits.sort()
+        console.log(furits);
+        //Array reverse()
+        const person = ["Joy","Rahul","Rick"];
+        console.log(person.reverse());
+        const newFruits = ["Mango", "Orange","Apple","Banana"];
+        newFruits.sort();
+        newFruits.reverse();
+        console.log(newFruits);
+        //Array toSorted()
+        let names = ["Zara","Ali","Babu"];
+        let sortedName = names.toSorted();
+        console.log(names);
+        console.log(sortedName);
+        //Array toReversed();
+        let newNames = ["Ali","Babu","Zara"];
+        let reversedNames = newNames.toReversed();
+        console.log(newNames);
+        console.log(reversedNames);
+        //Numeric sort
+        //Array sort()
+        let numbers = [5, 3, 1, 2, 10];
+        numbers.sort((a,b) => a-b);
+        console.log(numbers);
+        //Random sort..
+        let arr = [1, 2, 3, 4, 5, 6];
+        arr.sort(()=> Math.random()- 0.5);
+        console.log(arr);
+        //Array Math.min()
+        //let array = [10, 50, 78, 3];
+        let min = Math.min(10, 50, 78, 3);
+        console.log(min);
+        let max = Math.max(10, 50, 78, 3);
+        console.log(max);
+        //Home made min()
+        const points = [34, 5, 6, 56, 34, 68, 90];
+        function myArray(points){
+            let min = points[0];
+            for (let i = 1; i<points.length; i++){
+                if(points[i] < min){
+                    min = points[i];
+                }
+            }
+            return min;
+        }
+        console.log(myArray(points));
+    </script>
+</body>
+</html>
