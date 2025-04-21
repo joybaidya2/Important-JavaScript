@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Methods..!</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstName: "Joy",
+            lastName: "Baidya",
+            id: 211002096,
+            fullName: function (){
+                return (this.firstName + " "+ this.lastName).toUpperCase();
+            }
+        }
+        console.log(person.fullName());
+        //If you access it witout (), it will return the function.
+        const man = {
+            firstName: "Rick",
+            lastName: "Baruri",
+            age: 5,
+            fullName: function(){
+                return this.firstName + " "+ this.lastName;
+            }
+        }
+        console.log(man.fullName);
+        // Adding a Method.
+        const car = {
+            name: "R15",
+            model: 2023,
+            price: 72000
+        };
+        car.name = function(){
+            return this.name + " "+ this.model;
+        };
+        console.log(car.name());
+    </script>
+</body>
+</html>
