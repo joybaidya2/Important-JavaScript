@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object file.!</title>
+</head>
+
+<body>
+    <script>
+        //Create an object...
+        const person = {
+            firstName: "Joy",
+            lastName: "Baidya",
+            age: 23,
+            color: "Black and White"
+        };
+        console.log(person.firstName + " is " + person.age + " years old");
+        //Another way create a object.
+        const per = {};
+        per.firstName = "Joy";
+        per.lastName = "Baidya";
+        per.age = 23;
+        per.color = "Black and White";
+        delete per.age;
+        console.log(per.firstName + " is " + per.age + " years old.");
+        //Using the new keyword.... There is no need to use.
+        const fruit = new Object();
+        fruit.name = "Mango";
+        fruit.price = 50;
+        fruit.color = "Green";
+        console.log(fruit.name + " price is " + fruit.price);
+        //Object and function togather.
+        const car = {
+            name: "BMW",
+            model: 2020,
+            price: 2000000000,
+            namePrice: function () {
+                return this.name + " price is " + this.price;
+            }
+        };
+        console.log(car.namePrice());
+
+        const persons = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+        // Try to create a Copy
+        const x = persons;
+        // This will change age in person !!!
+        x.age = 10;
+        console.log(persons.firstName + " is " + persons.age + " years old.");
+        //Nested objects
+        const myObj = {
+            name : "Joy",
+            age : 30,
+            myCars: {
+                car1: "BMW",
+                car2: "Ford",
+                car3: "Fiat"
+            }
+        }
+        console.log(myObj.myCars.car1);
+    </script>
+</body>
+
+</html>
