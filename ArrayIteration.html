@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Iteration Method..!</title>
+</head>
+<body>
+    <script>
+        //Array forEach
+        const numbers = [2, 3, 4, 5];
+        let txt = " ";
+        function myFunction(value){
+            txt = txt + value * 2 +" ,";
+        }
+        numbers.forEach(myFunction);
+        console.log(txt);
+        //Array map()
+        const num = [10, 23, 45, 63];
+        function newFunction(value){
+            return value * 2;
+        }
+        const result = num.map(newFunction);
+        console.log("The new array is : "+result);
+        //Array flatMapp()
+        const nums = [1, 2, 3, 5, 7];
+        const results = nums.flatMap(num => [num, num * 10]);
+        console.log(results);
+        //Array filter()
+        const number = [12, 23, 34, 45, 40, 52];
+        function filterFunction(value){
+            return value > 15;
+        }
+        const res = number.filter(filterFunction);
+        console.log("The filtering result is: "+res);
+        //Array reduce()
+        const num1 = [12, 34, 43, 56, 65];
+        function reduceFunction(total, value){
+            return total + value;
+        }
+        const newResult = num1.reduce(reduceFunction);
+        console.log(num1);
+        console.log(newResult);
+        //Array reduceRight.
+        const num2 = [11, 22, 32, 21, 45];
+        function reduceRightFunction(total, value){
+            return total + value;
+        }
+        const rest = num2.reduceRight(reduceRightFunction);
+        console.log(rest);
+        //Anoter exaple for string
+        const char = ['A', 'B','C', 'D'];
+        function charFunctipn(total, value){
+            return total + value;
+        }
+        const newChar = char.reduceRight(charFunctipn);
+        console.log(newChar);
+        //Array every()
+        const num3 = [12, 3, 5, 15, 6];
+        function everyFunction(value){
+            return value > 18;
+        }
+        const newRes = num3.every(everyFunction);
+        console.log(newRes);
+        //Array some()
+        const num4 = [12, 3,6, 7, 90];
+        function someFunction(value){
+            return value > 10
+        }
+        const num5 = num4.some(someFunction);
+        console.log(num5);
+        //Array Array.from()
+        const myArr = Array.from("ABCDEFG");
+        console.log(myArr);
+        //Array keys()
+        const newCharter = ["Banana", "Apple","Orange","Mango"];
+        const keys = newCharter.keys();
+        let text = "";
+        for (let x of keys){
+            text += x + ",";
+        }
+        console.log("The key result is: "+keys);
+        //Array etries()
+        const names = ["Joy", "Rahul", "Ripon", "Rick"];
+        const first = names.entries();
+        for (let x of first){
+            console.log(x);
+        }
+        //Array with()
+        const months = ["January","February", "Mar", "April"];
+        const myMonths = months.with(2, "March");
+        console.log(myMonths);
+        //Array spread
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const q3 = ["Jul", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "Des"];
+
+        const year = [...q1, ...q2, ...q3, ...q4];
+        console.log(year);
+    </script>
+</body>
+</html>
