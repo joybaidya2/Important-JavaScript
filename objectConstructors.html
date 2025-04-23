@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Constructor Function..!</title>
+</head>
+<body>
+    <script>
+        function person(first, last, age, eye){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+        const myFather = new person("Bishwajit","Baidya",43, "black");
+        console.log("My father age is: "+myFather.age);
+        //create a multipole object 
+        function persons (first, last, age, eye){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+            this.fullName = function (){
+                return this.firstName + " "+this.lastName;
+            }
+        }
+        const own = new persons ("Joy", "Baidya",23,"Black");
+        const myMama = new persons ("Rahul", "Baruri", 32, "Black and white");
+        const myMother = new persons ("Babita", "Baidya", 38, "Blue");
+        const myBrother = new persons ("Rick", "Baruri", 5, "Black");
+        console.log("My mama age is :"+myMama.age);
+        console.log("My brother age is: "+myBrother.age);
+        console.log("My name is :"+own.firstName);
+        console.log("My mother full name is: "+myMother.fullName());
+    </script>
+</body>
+</html>
