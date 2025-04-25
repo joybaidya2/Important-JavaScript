@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        function myFunction(p1, p2){
+            return p1 * p2;
+        }
+        let result = myFunction(10, 9);
+        console.log(result);
+        //Anoter way function.
+        function newFunction (num1, num2){
+            return 50 / 5;
+        }
+        console.log(newFunction());
+        //Convert from fahrenheit to celsius
+        function toCelsius(f){
+            return (5 /9) * (f-32);
+        }
+        let value = toCelsius(77);
+        console.log("The Celsius is: "+value);
+        //Convert from celsius to fahrenheit 
+        function toFahrenheit(c){
+            return c * (9/5) + 32;
+        }
+        let results = toFahrenheit(25);
+        console.log("The fahrenheit is: "+results);
+    </script>
+</body>
+</html>
