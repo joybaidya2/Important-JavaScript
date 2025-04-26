@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function..!</title>
+</head>
+<body>
+    <script>
+        let myFunction = (a,b) => a*b;
+        let result = myFunction(30,4);
+        console.log(result);
+
+        //with out arrow function
+        hello = function(){
+            return "Hello world..!";
+        }
+        console.log(hello());
+        //With arrow function..
+        hi = () => {
+            return "Hello JavaScript";
+        }
+        console.log(hi());
+        //Without the brackets or the return keyword..
+        Hello = () => "Hello Bangladesh..!";
+        console.log(Hello());
+
+        //With a regular function this represents the object that calls the function
+        const person = {
+            name: "Joy",
+            age: 23,
+            greet: function(){
+                return "Hi i'm "+ this.name;
+            }
+        };
+        console.log(person.greet());
+        //With an arrow function this represents the owner of the function..
+        const man = {
+            name: "Rick",
+            age: 5,
+            greet: function(){
+                const innerGreet = () => {
+                    console.log("Hi, I'm "+ this.name);
+                };
+                innerGreet();
+            }
+        };
+        console.log(man.greet());
+    </script>
+</body>
+</html>
