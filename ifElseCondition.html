@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else Condition...!</title>
+</head>
+<body>
+    <script>
+        //Using if else condition.
+        const birinayPrice = 500;
+        if(birinayPrice < 300){
+            console.log("Mama, give me some birinay.!");
+        }else{
+            console.log("I don't have money today..!");
+        }
+        
+        const weight = 40;
+        if(weight > 20){
+            console.log("Rickshaw mama, colo jay.");
+        }else{
+            console.log("Walking is exercising...!");
+        }
+
+        const login = true;
+        if(login == false){
+            console.log("Welcome.!");
+        }else{
+            console.log("Get Lost!")
+        }
+
+        const mark = 85;
+        if(mark > 80){
+            console.log("My father buy a bike for me..!");
+        }else{
+            console.log("My father don't buy bike for me..!");
+        }
+
+        const salary = 6500;
+        const BCS = true;
+        if(salary > 5000 && BCS == true){
+            console.log("Sey level er patro.!");
+        }else{
+            console.log("Very bad patro..")
+        }
+
+        const mySalary = 46000;
+        const myHeight = 68;
+        if(mySalary > 50000 || myHeight < 68){
+            console.log("Bolo baba kobul..!");
+        }else{
+            console.log("Vaag tui mokbul..!");
+        }
+
+        //If else Discount..// 10% discunt..
+        const productPrice = 6500;
+        if(productPrice >= 6400){
+            const Discount = productPrice / 100 * 10;
+            const pay = productPrice - Discount;
+            console.log("The discount price is: "+pay);
+        }else{
+            console.log("You don't have any discount plase pay :"+productPrice);
+        }
+
+        const price = 4500;
+        if(price > 4000){
+            const discount = price / 100 * 15;
+            const pay = price - discount;
+            console.log("Plese pay :"+pay);
+        }else if(price >= 2500){
+            const discount = price / 100 * 5;
+            const pay = price - discount;
+            console.log("Please pay: "+pay);
+        }
+
+        //Nested if-Else condition...
+        const money = 400;
+        const popCon = 45;
+        if(money >= 300){
+            console.log("Going to watch a moive..!");
+            if(popCon <= 50){
+                console.log("Buy popCON");
+            }else{
+                console.log("PopCon is very expensive..!");
+            }
+        }else{
+            console.log("Home alone");
+        }
+
+        const inviteMyFriend = true;
+        const myMoney = 1200;
+        if(inviteMyFriend == true){
+            console.log("I attend the party");
+            if(myMoney > 1000){
+                console.log("Buy a gift.");
+            }else{
+                console.log("I don't have enough money..!");
+            }
+        }else{
+            console.log("You are not a my best friend");
+        }
+    </script>
+</body>
+</html>
