@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop Output..!</title>
+</head>
+<body>
+    <script>
+        //For of loop..
+        const numbers = [12, 45, 23, 32, 14];
+        for(const num of numbers){
+            console.log(num);
+        }
+
+        const fruits = ['Apple','Orange','Banana', 'Mango'];
+        for(const iteam of fruits){
+            console.log(iteam);
+        }
+
+        //While loop..
+        let num = 0;
+        while( num < 5){
+            console.log(num);
+            num ++;
+        }
+
+        let nums = 0;
+        while(nums < 5){
+            console.log(nums+". I love my country.");
+            nums++;
+        }
+
+        //Total number sum.
+        let nub = 0;
+        let sum = 0;
+        while(nub <= 10){
+           // console.log(nub);
+            sum = sum + nub;
+            nub++;
+        }
+        console.log("The total number of sum: "+sum);
+        //Convert for loop..
+        let numb = 0;
+        let sums = 0;
+        for(numb = 0; numb <= 30; numb++){
+             sums = sums + numb;
+        }
+        console.log("The total number is: "+sums);
+
+        //Find the odd number..
+        let oddNumbers = 1;
+        while(oddNumbers < 20){
+            console.log("The odd number is :"+oddNumbers);
+            oddNumbers= oddNumbers + 2;
+        }
+        //using for loop..
+        let i = 1;
+        for(i = 1; i<=20; i= i+2){
+            console.log("Odd output is: "+i);
+        }
+
+        //Find the even numbers..
+        let evenNumbers = 0;
+        while(evenNumbers < 15){
+            console.log("Even number is: "+evenNumbers);
+            evenNumbers = evenNumbers + 2;
+        }
+
+        //Another way find the odd..
+        for( i = 0; i < 15; i++){
+            if(i % 2 == 0){
+                console.log(i);
+            }
+        }
+        //convert while loop..
+        let newEven = 0;
+        while(newEven < 30){
+            if(newEven % 2 == 0){
+                console.log(newEven);
+            }
+            newEven++;
+        }
+
+        for(i=0; i<=40; i++){
+            if(i % 3 == 0 || i % 5 == 0){
+                console.log(i);
+            }
+        }
+        //Convert while loop..
+        let even = 0;
+        while(even <= 30){
+            if(even % 3 == 0 && even % 5 == 0){
+                console.log(even);
+            }
+            even++;
+        }
+    </script>
+</body>
+</html>
